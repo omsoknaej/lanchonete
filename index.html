@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete Online</title>
+    <link rel="stylesheet" href="F:/HTML_PROJECT/LANCHONETE/stylesheets.css">
+  
+    
+</head>
+<body>
+    <div class="container">
+        
+         <script src="scripts.js"></script>
+        <header>
+            <h1>🍕 Lanchonete Delícia 🍕</h1>
+            <p>Seu lanche favorito de todos os dias!</p>
+        </header>
+
+        <div class="aviso">
+            <h3>⚠️ Aviso Importante</h3>
+            <p>Horário de funcionamento: Segunda a Sexta, das 19h às 22h!</p>
+        </div>
+
+        <div class="content">
+            <div class="menu-section">
+                <div class="categoria">
+                    <h2>🥐 Salgados</h2>
+                    <div class="produtos">
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Coxinha de Frango</div>
+                                <div class="produto-preco">R$ 6,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Coxinha de Frango', 6.00)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Pastel de Carne</div>
+                                <div class="produto-preco">R$ 7,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Pastel de Carne', 7.00)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Pão de Queijo</div>
+                                <div class="produto-preco">R$ 4,50</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Pão de Queijo', 4.50)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Empada de Palmito</div>
+                                <div class="produto-preco">R$ 8,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Empada de Palmito', 8.00)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Esfiha de Carne</div>
+                                <div class="produto-preco">R$ 5,50</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Esfiha de Carne', 5.50)">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria">
+                    <h2>🥤 Sucos</h2>
+                    <div class="produtos">
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Suco de Laranja (500ml)</div>
+                                <div class="produto-preco">R$ 8,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Suco de Laranja (500ml)', 8.00)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Suco de Morango (500ml)</div>
+                                <div class="produto-preco">R$ 9,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Suco de Morango (500ml)', 9.00)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Suco de Abacaxi (500ml)</div>
+                                <div class="produto-preco">R$ 8,50</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Suco de Abacaxi (500ml)', 8.50)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Suco de Limão (500ml)</div>
+                                <div class="produto-preco">R$ 7,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Suco de Limão (500ml)', 7.00)">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria">
+                    <h2>🥤 Refrigerantes</h2>
+                    <div class="produtos">
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Coca-Cola (350ml)</div>
+                                <div class="produto-preco">R$ 5,00</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Coca-Cola (350ml)', 5.00)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Guaraná (350ml)</div>
+                                <div class="produto-preco">R$ 4,50</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Guaraná (350ml)', 4.50)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Sprite (350ml)</div>
+                                <div class="produto-preco">R$ 4,50</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Sprite (350ml)', 4.50)">Adicionar</button>
+                        </div>
+                        <div class="produto">
+                            <div class="produto-info">
+                                <div class="produto-nome">Fanta Laranja (350ml)</div>
+                                <div class="produto-preco">R$ 4,50</div>
+                            </div>
+                            <button class="btn-adicionar" onclick="adicionarAoCarrinho('Fanta Laranja (350ml)', 4.50)">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrinho-section">
+                <h2>🛒 Meu Carrinho</h2>
+                <div id="carrinho-items">
+                    <div class="carrinho-vazio">
+                        Seu carrinho está vazio
+                    </div>
+                </div>
+
+                <div class="total-section">
+                    <div class="total-valor">
+                        <span>Total:</span>
+                        <span id="total-valor">R$ 0,00</span>
+                    </div>
+                </div>
+
+                <div class="pagamento-section">
+                    <h3>💳 Forma de Pagamento</h3>
+                    <div class="opcoes-pagamento">
+                        <div class="opcao-pag" onclick="selecionarPagamento(this, 'dinheiro')">
+                            💵 Dinheiro
+                        </div>
+                        <div class="opcao-pag" onclick="selecionarPagamento(this, 'cartao')">
+                            💳 Cartão de Crédito
+                        </div>
+                        <div class="opcao-pag" onclick="selecionarPagamento(this, 'debito')">
+                            💳 Cartão de Débito
+                        </div>
+                        <div class="opcao-pag" onclick="selecionarPagamento(this, 'pix')">
+                            📱 PIX
+                        </div>
+                    </div>
+                    <button class="btn-finalizar" id="btn-finalizar" onclick="finalizarPedido()" disabled>
+                        Finalizar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
